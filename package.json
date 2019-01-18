@@ -1,0 +1,11 @@
+{
+  "name": "raspberrypiTest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/icezeros/raspberrypiTest.git",
+  "author": "icezeros <icezeros@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "rpio": "^1.0.12"
+  }
+}
