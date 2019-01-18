@@ -10,16 +10,20 @@ rpio.open(11, rpio.OUTPUT);
 // }
 let status = rpio.HIGH;
 function blink() {
+  let tmp = status;
   const num = Math.random() * 100;
   if (num > 50) {
-    rpio.write(11, status);
-  } else {
     status = status === rpio.HIGH ? rpio.Low : rpio.HIGH;
-    rpio.write(11, status);
   }
-  // setTimeout(function ledoff() {
-  //   rpio.write(11, rpio.LOW);
-  // }, 50);
+  // if (num > 50) {
+  //   rpio.write(11, status);
+  // } else {
+  //   status = status === rpio.HIGH ? rpio.Low : rpio.HIGH;
+  //   rpio.write(11, status);
+  // }
+  setTimeout(function ledoff() {
+    rpio.write(11, tmp);
+  }, 50);
 }
 
 setInterval(blink, 1000);
