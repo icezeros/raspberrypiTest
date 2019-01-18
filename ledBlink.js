@@ -12,6 +12,8 @@ let status = rpio.HIGH;
 function blink() {
   let tmp = status;
   const num = Math.random() * 100;
+  console.log('============ tmp,num =============');
+  console.log(tmp, num);
   if (num > 50) {
     status = status === rpio.HIGH ? rpio.LOW : rpio.HIGH;
   }
