@@ -13,7 +13,7 @@ function blink() {
   let tmp = status;
   const num = Math.random() * 100;
   if (num > 50) {
-    status = status === rpio.HIGH ? rpio.Low : rpio.HIGH;
+    status = status === rpio.HIGH ? rpio.LOW : rpio.HIGH;
   }
   // if (num > 50) {
   //   rpio.write(11, status);
