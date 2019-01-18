@@ -2,11 +2,24 @@
 var rpio = require('rpio');
 rpio.open(11, rpio.OUTPUT);
 
+// function blink() {
+//   rpio.write(11, rpio.HIGH);
+//   setTimeout(function ledoff() {
+//     rpio.write(11, rpio.LOW);
+//   }, 50);
+// }
+let status = rpio.HIGH;
 function blink() {
-  rpio.write(11, rpio.HIGH);
-  setTimeout(function ledoff() {
-    rpio.write(11, rpio.LOW);
-  }, 50);
+  const num = Math.random() * 100;
+  if (num > 50) {
+    rpio.write(11, status);
+  } else {
+    status = status === rpio.HIGH ? rpio.Low : rpio.HIGH;
+    rpio.write(11, status);
+  }
+  // setTimeout(function ledoff() {
+  //   rpio.write(11, rpio.LOW);
+  // }, 50);
 }
 
-setInterval(blink, 100);
+setInterval(blink, 1000);
