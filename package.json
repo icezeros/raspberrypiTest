@@ -6,6 +6,8 @@
   "author": "icezeros <icezeros@163.com>",
   "license": "MIT",
   "dependencies": {
-    "rpio": "^1.0.12"
+    "lodash": "^4.17.11",
+    "rpio": "^1.0.12",
+    "shelljs": "^0.8.3"
   }
 }
