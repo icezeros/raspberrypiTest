@@ -14,5 +14,5 @@ wifi.connectToWifi(options, function(error) {
 });
 
 wifi.getCurrentWifiSettings(function(error, data) {
-  console.log(data.ssid);
+  console.log(data);
 });
