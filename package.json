@@ -8,6 +8,7 @@
   "dependencies": {
     "lodash": "^4.17.11",
     "node-raspbian-wifi": "^1.0.2",
+    "node-wifi-scanner": "^1.0.0",
     "rpio": "^1.0.12",
     "shelljs": "^0.8.3"
   }
