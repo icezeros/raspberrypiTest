@@ -44,13 +44,14 @@ child.stderr.on('data', function(data) {
 });
 
 function sum() {
-  if (obj.index == 10) {
+  const index = 10;
+  if (obj.index == index) {
     console.log('============ obj.ch0 =============');
     console.log(obj.ch0);
     console.log('============ obj.ch1 =============');
     console.log(obj.ch1);
     console.log('============ result  =============');
-    console.log((obj.ch0 - obj.ch1) / 100);
+    console.log((obj.ch0 - obj.ch1) / index);
     obj = {
       ch0: 0,
       ch1: 0,
