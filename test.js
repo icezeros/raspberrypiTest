@@ -13,6 +13,14 @@ child.stdout.on('data', function(data) {
   /* ... do something with data ... */
   console.log('============ data =============');
   console.log(data);
+  try {
+    const arr = JSON.parse(data);
+    console.log('============ arr =============');
+    console.log(arr);
+  } catch (error) {
+    console.log('============ error.message =============');
+    console.log(error.message);
+  }
   // const arr = JSON.parse(data);
   // console.log('============ arr =============');
   // console.log(arr);
