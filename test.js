@@ -11,8 +11,8 @@ const child = exec('/home/pi/daqhats/examples/python/mcc118/single_value_read.py
 child.stdout.on('data', function(data) {
   /* ... do something with data ... */
   const arr = data.split(' ');
-  console.log('============ arr =============');
-  console.log(arr);
+  // console.log('============ arr =============');
+  // console.log(arr);
   const i = Number(arr[21]) - Number(arr[28]);
   console.log('============ i =============');
   console.log(i);
