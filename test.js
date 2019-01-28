@@ -9,6 +9,7 @@ let obj = {
 };
 
 let resulArr = [];
+let offsetArr = [];
 
 // const child = exec('yarn add lodash', { async: true });
 const child = exec(path.join(__dirname, 'index.py'), { async: true });
@@ -28,6 +29,9 @@ child.stdout.on('data', function(data) {
     obj.ch0 += arr[0] * 1000;
     obj.ch1 += arr[1] * 1000;
     obj.index += 1;
+    offsetArr.push(i);
+    console.log('============ offsetArr =============');
+    console.log(offsetArr);
     deal();
 
     // console.log('============ i =============');
