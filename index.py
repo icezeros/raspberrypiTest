@@ -64,24 +64,25 @@ def main():
         print('\nAcquiring data ... Press Ctrl-C to abort')
 
         # Display the header row for the data table.
-        print('\n  Samples/Channel', end='')
-        for chan in range(low_chan, high_chan + 1):
-            print('     Channel', chan, end='')
-        print('')
+        # print('\n  Samples/Channel', end='')
+        # for chan in range(low_chan, high_chan + 1):
+        #     print('     Channel', chan, end='')
+        # print('')
 
         try:
             samples_per_channel = 0
             while True:
                 # Display the updated samples per channel count
                 samples_per_channel += 1
-                print('\r{:17}'.format(samples_per_channel), end='')
+                # print('\r{:17}'.format(samples_per_channel), end='')
 
                 # Read a single value from each selected channel.
                 for chan in range(low_chan, high_chan + 1):
                     value = hat.a_in_read(chan, options)
-                    print('{:12.5} V'.format(value), end='')
+                    # print('{:12.5} V'.format(value), end='')
+                    print(value)
 
-                stdout.flush()
+                # stdout.flush()
 
                 # Wait the specified interval between reads.
                 sleep(sample_interval)
