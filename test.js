@@ -8,6 +8,8 @@ let obj = {
   index: 0,
 };
 
+const resulArr = [];
+
 // const child = exec('yarn add lodash', { async: true });
 const child = exec(path.join(__dirname, 'index.py'), { async: true });
 
@@ -52,6 +54,9 @@ function deal() {
     console.log(obj.ch1);
     console.log('============ result  =============');
     console.log((obj.ch0 - obj.ch1) / index);
+    resulArr.push(obj);
+    console.log('============ resultArr =============');
+    console.log(resultArr);
     obj = {
       ch0: 0,
       ch1: 0,
