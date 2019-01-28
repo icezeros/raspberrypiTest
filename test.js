@@ -11,17 +11,9 @@ const child = exec(path.join(__dirname, 'index.py'), { async: true });
 // });
 child.stdout.on('data', function(data) {
   /* ... do something with data ... */
-  const arr = data.split(' ');
-  // console.log('============ arr =============');
-  // console.log(arr);
-  console.log('============ ttt =============');
-  console.log(Number(arr[21]), Number(arr[28]));
-  const i = (Number(arr[21]) - Number(arr[28])) * 1000;
-  console.log('============ i =============');
-  console.log(i);
-  // console.log('   ');
-  // console.log(data);
-  // console.log('   ');
+  const arr = JSON.parse(data);
+  console.log('============ arr =============');
+  console.log(arr);
 });
 child.stderr.on('data', function(data) {
   /* ... do something with data ... */
