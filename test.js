@@ -26,7 +26,7 @@ child.stdout.on('data', function(data) {
     obj.ch0 += arr[0] * 1000;
     obj.ch1 += arr[1] * 1000;
     obj.index += 1;
-    sum();
+    deal();
 
     // console.log('============ i =============');
     // console.log(i);
@@ -43,7 +43,7 @@ child.stderr.on('data', function(data) {
   console.log('===================Program stderr:', data);
 });
 
-function sum() {
+function deal() {
   const index = 10;
   if (obj.index == index) {
     console.log('============ obj.ch0 =============');
