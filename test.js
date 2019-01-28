@@ -15,8 +15,11 @@ child.stdout.on('data', function(data) {
   console.log(data);
   try {
     const arr = JSON.parse(data);
-    console.log('============ arr =============');
-    console.log(arr);
+    // console.log('============ arr =============');
+    // console.log(arr);
+    const i = arr[0] - arr[1];
+    console.log('============ i =============');
+    console.log(i);
   } catch (error) {
     console.log('============ error.message =============');
     console.log(error.message);
