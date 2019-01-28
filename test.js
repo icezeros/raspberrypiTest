@@ -10,9 +10,10 @@ const child = exec('/home/pi/daqhats/examples/python/mcc118/single_value_read.py
 // });
 child.stdout.on('data', function(data) {
   /* ... do something with data ... */
-  console.log('   ');
-  console.log(data);
-  console.log('   ');
+  // const arr = data.splict
+  // console.log('   ');
+  // console.log(data);
+  // console.log('   ');
 });
 child.stderr.on('data', function(data) {
   /* ... do something with data ... */
