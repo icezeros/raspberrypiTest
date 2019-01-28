@@ -28,8 +28,8 @@ child.stdout.on('data', function(data) {
     obj.index += 1;
     sum();
 
-    console.log('============ i =============');
-    console.log(i);
+    // console.log('============ i =============');
+    // console.log(i);
   } catch (error) {
     console.log('============ error.message =============');
     console.log(error.message);
