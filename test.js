@@ -10,7 +10,6 @@ const child = exec('/home/pi/daqhats/examples/python/mcc118/single_value_read.py
 // });
 child.stdout.on('data', function(data) {
   /* ... do something with data ... */
-  console.log('===================Program output:');
   console.log('   ');
   console.log(data);
   console.log('   ');
