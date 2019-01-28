@@ -1,9 +1,10 @@
 const shell = require('shelljs');
+const path = require('path');
 const { exec } = shell;
 const version = exec('node --version', { silent: true }).stdout;
 
 // const child = exec('yarn add lodash', { async: true });
-const child = exec('/home/pi/daqhats/examples/python/mcc118/single_value_read.py', { async: true });
+const child = exec(path.join(__dirname, 'index.py'), { async: true });
 
 // child.code.on('data', function(data) {
 //   /* ... do something with data ... */

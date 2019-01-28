@@ -31,7 +31,7 @@ def main():
     low_chan = 0
     high_chan = 3
     mcc_118_num_channels = mcc118.info().NUM_AI_CHANNELS
-    sample_interval = 0.05  # Seconds
+    sample_interval = 0.1  # Seconds
 
     try:
         # Ensure low_chan and high_chan are valid.
