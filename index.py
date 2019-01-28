@@ -83,8 +83,8 @@ def main():
                     # print('{:12.5} V'.format(value), end='')
                     values.append(value)
 
-                # stdout.flush()
                 print(values)
+                stdout.flush()
                 # Wait the specified interval between reads.
                 sleep(sample_interval)
 
