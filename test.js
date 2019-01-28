@@ -44,7 +44,7 @@ child.stderr.on('data', function(data) {
 });
 
 function deal() {
-  const index = 10;
+  const index = 1000;
   if (obj.index == index) {
     console.log('============ obj.ch0 =============');
     console.log(obj.ch0);
