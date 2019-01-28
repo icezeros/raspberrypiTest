@@ -12,6 +12,7 @@
         to read a single value from each selected channel on each iteration
         of the loop.
 """
+
 from __future__ import print_function
 from time import sleep
 from sys import stdout
