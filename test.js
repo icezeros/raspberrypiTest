@@ -49,7 +49,7 @@ function deal() {
   const index = 1000;
   console.log('============ obj.index =============');
   console.log(obj.index);
-  if (obj.index == index) {
+  if (obj.index >= index) {
     console.log('============ obj.ch0 =============');
     console.log(obj.ch0);
     console.log('============ obj.ch1 =============');
