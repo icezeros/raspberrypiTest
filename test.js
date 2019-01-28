@@ -17,7 +17,7 @@ child.stdout.on('data', function(data) {
     const arr = JSON.parse(data);
     // console.log('============ arr =============');
     // console.log(arr);
-    const i = arr[0] - arr[1];
+    const i = (arr[0] - arr[1]) * 1000;
     console.log('============ i =============');
     console.log(i);
   } catch (error) {
