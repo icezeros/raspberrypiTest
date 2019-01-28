@@ -75,15 +75,15 @@ def main():
                 # Display the updated samples per channel count
                 samples_per_channel += 1
                 # print('\r{:17}'.format(samples_per_channel), end='')
-
+                values = []
                 # Read a single value from each selected channel.
                 for chan in range(low_chan, high_chan + 1):
                     value = hat.a_in_read(chan, options)
                     # print('{:12.5} V'.format(value), end='')
-                    print(value)
+                    values.append(value)
 
                 # stdout.flush()
-
+                print(values)
                 # Wait the specified interval between reads.
                 sleep(sample_interval)
 
