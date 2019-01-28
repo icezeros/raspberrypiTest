@@ -13,6 +13,9 @@ child.stdout.on('data', function(data) {
   const arr = data.split('     ');
   console.log('============ arr =============');
   console.log(arr);
+  const i = Number(arr[4]) - Number(arr[5]);
+  console.log('============ i =============');
+  console.log(i);
   // console.log('   ');
   // console.log(data);
   // console.log('   ');
