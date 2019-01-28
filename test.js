@@ -15,7 +15,7 @@ child.stdout.on('data', function(data) {
   // console.log(arr);
   console.log('============ ttt =============');
   console.log(Number(arr[21]), Number(arr[28]));
-  const i = Number(arr[21]) - Number(arr[28]);
+  const i = (Number(arr[21]) - Number(arr[28])) * 1000;
   console.log('============ i =============');
   console.log(i);
   // console.log('   ');
