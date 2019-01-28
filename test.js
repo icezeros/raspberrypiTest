@@ -29,13 +29,13 @@ child.stdout.on('data', function(data) {
     obj.ch0 += arr[0] * 1000;
     obj.ch1 += arr[1] * 1000;
     obj.index += 1;
-    offsetArr.push(i);
-    console.log('============ offsetArr =============');
-    console.log(offsetArr);
-    deal();
+    // offsetArr.push(i);
+    // console.log('============ offsetArr =============');
+    // console.log(offsetArr);
+    // deal();
 
-    // console.log('============ i =============');
-    // console.log(i);
+    console.log('============ i =============');
+    console.log(i);
   } catch (error) {
     console.log('============ error.message =============');
     console.log(error.message);
