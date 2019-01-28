@@ -58,6 +58,7 @@ function deal() {
     console.log(obj.ch1);
     console.log('============ result  =============');
     console.log((obj.ch0 - obj.ch1) / index);
+    obj.result = (obj.ch0 - obj.ch1) / index;
     resulArr.push(obj);
     console.log('============ resulArr =============');
     console.log('============ resulArr =============');
