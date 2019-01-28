@@ -44,7 +44,7 @@ child.stderr.on('data', function(data) {
 });
 
 function sum() {
-  if (obj.index == 100) {
+  if (obj.index == 10) {
     console.log('============ obj.ch0 =============');
     console.log(obj.ch0);
     console.log('============ obj.ch1 =============');
