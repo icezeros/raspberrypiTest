@@ -11,9 +11,11 @@ const child = exec(path.join(__dirname, 'index.py'), { async: true });
 // });
 child.stdout.on('data', function(data) {
   /* ... do something with data ... */
-  const arr = JSON.parse(data);
-  console.log('============ arr =============');
-  console.log(arr);
+  console.log('============ data =============');
+  console.log(data);
+  // const arr = JSON.parse(data);
+  // console.log('============ arr =============');
+  // console.log(arr);
 });
 child.stderr.on('data', function(data) {
   /* ... do something with data ... */
